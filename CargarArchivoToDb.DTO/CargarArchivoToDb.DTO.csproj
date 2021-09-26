@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{13820DE3-96BF-45F7-AE56-29CC99F6A571}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CargarArchivoToDb.ConsoleTest</RootNamespace>
-    <AssemblyName>CargarArchivoToDb.ConsoleTest</AssemblyName>
+    <ProjectGuid>{1ADC9FE6-C272-466A-BCD6-6D2DA203A91C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CargarArchivoToDb.DTO</RootNamespace>
+    <AssemblyName>CargarArchivoToDb.DTO</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,21 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BaseDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CagarArchivoToDb.BE\CagarArchivoToDb.BE.csproj">
-      <Project>{9d6155c8-a6fe-4b28-aeed-55f83adb9a93}</Project>
-      <Name>CagarArchivoToDb.BE</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CagarArchivoToDb.BL\CagarArchivoToDb.BL.csproj">
-      <Project>{a66468f5-8715-4443-a827-8ec1a09861b8}</Project>
-      <Name>CagarArchivoToDb.BL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

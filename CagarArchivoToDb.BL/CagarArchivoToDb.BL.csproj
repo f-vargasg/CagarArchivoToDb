@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AllocationFileVoBL.cs" />
+    <Compile Include="AsignaMercBL.cs" />
+    <Compile Include="AsignaMercDetBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CagarArchivoToDb.BE\CagarArchivoToDb.BE.csproj">
+      <Project>{9d6155c8-a6fe-4b28-aeed-55f83adb9a93}</Project>
+      <Name>CagarArchivoToDb.BE</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CagarArchivoToDb.DL\CagarArchivoToDb.DL.csproj">
       <Project>{4c77b884-8b04-430d-b171-cd704ba1f4f3}</Project>
       <Name>CagarArchivoToDb.DL</Name>

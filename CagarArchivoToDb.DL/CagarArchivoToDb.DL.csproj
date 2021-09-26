@@ -47,12 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllocationFileVoDL.cs" />
+    <Compile Include="AsignaMercDetDL.cs" />
+    <Compile Include="AsignaMercDL.cs" />
     <Compile Include="DataWorker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CagarArchivoToDb.BE\CagarArchivoToDb.BE.csproj">
+      <Project>{9d6155c8-a6fe-4b28-aeed-55f83adb9a93}</Project>
+      <Name>CagarArchivoToDb.BE</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
