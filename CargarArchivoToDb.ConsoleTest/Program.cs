@@ -31,13 +31,13 @@ namespace CargarArchivoToDb.ConsoleTest
                 // allocationFileVoBL.Insertar(allocationFileVoBE);
                 allocationFileVoBL.Borrar("ArchPrueba");
 
-                Console.WriteLine("Archivo Insertado Correctamente");
-                Console.ReadLine();
+                Console.WriteLine("Trx Finalizada correctamente");
+                Console.ReadKey();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Ex :" + ex.Message);
-                Console.ReadLine();
+                Console.ReadKey();
             }
 
 

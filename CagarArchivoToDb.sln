@@ -15,6 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CagarArchivoToDb.WfLoadFile
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargarArchivoToDb.ConsoleTest", "CargarArchivoToDb.ConsoleTest\CargarArchivoToDb.ConsoleTest.csproj", "{13820DE3-96BF-45F7-AE56-29CC99F6A571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargarArchivoToDb.ConSrvLoadFile", "CargarArchivoToDb.ConSrvLoadFile\CargarArchivoToDb.ConSrvLoadFile.csproj", "{478DD9C4-4137-4AAF-8D10-3D3218A97116}"
+	ProjectSection(ProjectDependencies) = postProject
+		{108C404A-06F0-4557-977E-5E0DB2602281} = {108C404A-06F0-4557-977E-5E0DB2602281}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTestJsonFile", "WinTestJsonFile\WinTestJsonFile.csproj", "{4B06B4CD-73A6-4C9A-8008-97AF2A6439BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +52,14 @@ Global
 		{13820DE3-96BF-45F7-AE56-29CC99F6A571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13820DE3-96BF-45F7-AE56-29CC99F6A571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13820DE3-96BF-45F7-AE56-29CC99F6A571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{478DD9C4-4137-4AAF-8D10-3D3218A97116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478DD9C4-4137-4AAF-8D10-3D3218A97116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478DD9C4-4137-4AAF-8D10-3D3218A97116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478DD9C4-4137-4AAF-8D10-3D3218A97116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B06B4CD-73A6-4C9A-8008-97AF2A6439BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B06B4CD-73A6-4C9A-8008-97AF2A6439BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B06B4CD-73A6-4C9A-8008-97AF2A6439BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B06B4CD-73A6-4C9A-8008-97AF2A6439BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
