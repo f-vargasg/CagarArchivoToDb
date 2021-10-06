@@ -22,16 +22,16 @@ namespace CargaArchivoToDb.WcfService
             {
                 AsignaMercDetBL asignaMercDetBL = new AsignaMercDetBL();
                 AsignaMercBL asignaMercBL = new AsignaMercBL();
-                var respProc = JsonConvert.DeserializeObject<GeneralResponseCylBE<DetalleRtaAsignaBE>>(pData);
+                var respProc = JsonConvert.DeserializeObject<GeneralResponseCylBE<RespaAsignaBE>>(pData);
                 if (respProc != null)
                 {
                     if (respProc.Data != null)
                     {
                         if (respProc.Data.Data != null)
                         {
-                            if (respProc.Data.Success)
+                            if (respProc.Data.Data.Success)
                             {
-                                foreach (var item in respProc.Data.Data)
+                                foreach (var item in respProc.Data.Data.Data)
                                 {
                                     AsignaMercBE asignaMercBE = new AsignaMercBE
                                     {

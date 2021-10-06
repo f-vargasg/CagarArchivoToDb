@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BNVal.Sab.BE.CyLiq;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -31,7 +33,9 @@ namespace WinTestJsonFile
             string dataStr = File.ReadAllText(ConfigurationManager.AppSettings["jSonFileName"]);
 
 
-            
+
+            var respProc = JsonConvert.DeserializeObject<GeneralResponseCylBE<RespaAsignaBE>>(dataStr);
+
 
 
         }

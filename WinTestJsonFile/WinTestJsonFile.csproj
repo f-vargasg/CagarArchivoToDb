@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CagarArchivoToDb.BE\CagarArchivoToDb.BE.csproj">
+      <Project>{9d6155c8-a6fe-4b28-aeed-55f83adb9a93}</Project>
+      <Name>CagarArchivoToDb.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
