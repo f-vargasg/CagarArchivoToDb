@@ -40,7 +40,7 @@ namespace CargaArchivoToDb.WcfService
                                         Actiontype = 1,
                                         Agreementyield = 0,
                                         Allocationcode = item.NroAsignacion.ToString(),
-                                        Allocationentity = item.ContraParte,
+                                        Allocationentity = "501",
                                         NumAsignaN = null,
                                         Cashaccount = item.CuentaEfectivo,
                                         Centralsecurityrepository = "08",
